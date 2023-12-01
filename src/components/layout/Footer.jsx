@@ -2,6 +2,7 @@
 import React from "react";
 import { AiFillYoutube } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 function Footer() {
     return (
@@ -17,6 +18,9 @@ function Footer() {
                     size="2rem"
                 />
                 <AiFillInstagram 
+                    size="2rem"
+                />
+                <AiFillGithub 
                     size="2rem"
                 />
             </aside>
