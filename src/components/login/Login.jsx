@@ -7,13 +7,19 @@ import { AiOutlineTwitter } from "react-icons/ai";
 
 function Login() {
     return (
-    <section>
+    <section className="login">
+        
         <form>
-            <h2>Login</h2>
+
+            <div class="hstack mx-auto">
+                <button type="button" class="btn btn-primary btn-lg" disabled>Login</button>
+                <button type="button" class="btn btn-secondary btn-lg">Register</button>
+            </div>
+            
             <h5>Sign in with:</h5>
-            <div>
+            <div class="icons">
                 <CgFacebook
-                size="2rem" 
+                    size="2rem"
                 />
                 <AiOutlineTwitter
                     size="2rem"
@@ -25,16 +31,24 @@ function Login() {
                     size="2rem"
                 />
             </div>
-            <p>Or:</p>
+            <h5>Or:</h5>
             <input type="email" placeholder="Email Address" required />
             <input type="text" id="password" name="password" placeholder="Password" required />
             
             <div>
-                <input type="checkbox" id="rememberMe" name="remember" value="Remember me" />
-                <label for="rememberMe">Remember me?</label>
+                <span>
+                    <input class="form-check-input" type="checkbox" id="rememberMe" name="remember" value="Remember me" />
+                    <label class ="form-check-label" for="rememberMe">Remember me?</label>
+                </span>
                 <a href="contact">Forgot password?</a>
             </div>
             <button>Sign In</button>
+            <div>
+                <span>
+                    <p>Not a member?<a href=""> Register</a></p>
+                    
+                </span>
+            </div>
         </form>
     </section>
     );
