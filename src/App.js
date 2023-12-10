@@ -4,12 +4,13 @@ import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Contact from "./components/contact/Contact";
 // Add module imports for CART
-
+import Cart from "./components/cart/Cart";
 // Add module imports for Shipping
-
+import Shipping from "./components/cart/Shipping";
 import Login from "./components/login/Login";
 import Profile from "./components/profile/Profile";
 // Add module imports for MY ORDERS
+import MyOrders from "./components/myOrders/MyOrders";
 
 import OrderDetails from "./components/myOrders/OrderDetails";
 import About from "./components/about/About";
