@@ -2,6 +2,8 @@ import React from "react";
 import { Country, State } from "country-state-city";
 import Popup from 'reactjs-popup';
 
+const countries = Country.getAllCountries();
+
 const Shipping = () => {
   return (
     <section className="shipping">
@@ -19,13 +21,13 @@ const Shipping = () => {
           <div>
               {/* Compelte the code for the COUNTRY DROPDOWN*/}
             <label>Country</label>
-
-            <select>
-              <option value="">Country</option>
-// Enter the code here for country dropdown           
-                  </option>
-                ))}
-            </select>
+            <select id="countryDropdown">
+              {countries.map((country) => (
+                <option key={country.isoCode} value={country.isoCode}>
+                  {country.name}
+          </option>
+        ))}
+      </select>
           </div>
           <div>
               {/* Add the code for the STATE DROPDOWN*/}
