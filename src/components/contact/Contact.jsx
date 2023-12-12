@@ -6,7 +6,6 @@ import burger2 from "../../assets/burger2.png";
 function Contact() {
     return (
     <section className="contact">
-        
         <form>       
             <h2>Contact Us</h2>
             <input type="text" id="name" name="name" placeholder="Name" required />

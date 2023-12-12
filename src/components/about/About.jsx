@@ -1,6 +1,5 @@
-// Write all the code here
+
 import React from "react";
-import Founder from "../home/Founder";
 import me from "../../assets/skj.jpg";
 import { LiaSearchengin } from "react-icons/lia";
 

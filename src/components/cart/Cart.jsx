@@ -32,47 +32,47 @@ const Cart = () => {
           img={burger1}
           value={0}
           increment={() => increment(1)}
-          decrement={() => decrement(-1)}
+          decrement={() => decrement(1)}
 
         // Add the function for decrementing the order by 1 
        
         />
         <CartItem
-          title={"Veg Cheese Burger"}
+          title={"Mega Burger"}
           img={burger2}
           value={0}
           increment={() => increment(2)}
-          decrement={() => decrement(-2)}
+          decrement={() => decrement(2)}
         // Add the function for decrementing the order by 2
        
         />
 
         {/* Fill up the code for Cheese Burger similarly */}
         <CartItem
-          title={"Cheese Burger with French Fries"}
+          title={"Double Cheese Burger with Fries"}
           img={burger3}
           value={0}
-          increment={() => increment(1)}
-          decrement={() => decrement(-1)}
+          increment={() => increment(3)}
+          decrement={() => decrement(3)}
         />
        
 
         <article>
           <div>
             <h4>Sub Total</h4>
-            <p>₹{2000}</p>
+            <p>£12.00</p>
           </div>
           <div>
             <h4>Tax</h4>
-            <p>₹{2000 * 0.18}</p>
+            <p>£{12.00 * 0.18}</p>
           </div>
           <div>
             <h4>Shipping Charges</h4>
-            <p>₹{200}</p>
+            <p>£2.00</p>
           </div>{" "}
           <div>
             <h4>Total</h4>
-            <p>₹{2000 + 2000 * 0.18 + 200}</p>
+            <p>£{12.00 + 12.00 * 0.18 + 2.00}</p>
           </div>
           <Link to="/shipping">Checkout</Link>
         </article>
